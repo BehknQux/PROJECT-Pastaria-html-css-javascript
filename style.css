@@ -1,0 +1,376 @@
+:root {
+    --h_dark: #ffc107; 
+    --h_light: #fefbed;
+    --h_yellow: #2e1213;
+    --h_darker: #220d0e;
+    --h_blue: #0a5700;
+    --bs: 0 0 4rem 0.5rem;
+}
+
+body {
+    background-color: var(--h_yellow) !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+}
+/* Tarayıcıda görünen kaydırma çubuğunu özelleştirme */
+::-webkit-scrollbar {
+    width: 10px; /* Kaydırma çubuğunun genişliği */
+}
+
+/* Kaydırma çubuğunun arka plan rengi */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Kaydırma çubuğunun dolgu rengi */
+::-webkit-scrollbar-thumb {
+    background: #ffc107;
+}
+
+/* Kaydırma çubuğu üzerine gelindiğinde */
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--h_darker);
+    color: var(--h_light);
+    position: sticky;
+    top: 0;
+}
+.logo{
+    position: absolute;
+    left: 1rem;
+    font-family: "Sue Ellen Francisco", cursive !important;
+}
+.navbar-button{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: 0.15s;
+}
+.navbar-button:hover{
+    background-color: white;
+    color: black;
+}
+.cart{
+    position: absolute;
+    right: 1rem;
+}
+.banner{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: var(--h_dark);
+    color: white;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+.banner-image{
+    width: 100%;
+    opacity: 30%;
+position: absolute;
+}
+.description{
+    padding: 3rem 7rem;
+}
+.categories{
+    display: flex;
+    font-weight: bold;
+}
+.category{
+    letter-spacing: 0.5rem;
+}
+.slider{
+    height: 100dvh;
+    overflow: hidden;
+}
+.footer{
+    padding: 2rem 0;
+    background-color: #220d0e;
+    color: var(--h_light);
+}
+.main-informations-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+.main{
+    width: 20rem;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+.social-media-container{
+    display: flex;
+    justify-content: center;
+}
+.social-media-logo{
+    margin: 0 2rem;
+}
+.show-off-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-item-container{
+    border: 2px solid white;
+    margin: 1rem;
+    height: 25rem;
+    width: 25rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    /* box-shadow: 0 0 1rem 0.5rem white; */
+
+    position: relative;
+}
+.icon-container{
+    background-color: var(--h_light);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.main-icon-container{
+    position:absolute;
+    top: 5rem;
+    left: -3.5rem;
+}
+.move-right{
+    animation: right 0.3s ease forwards;
+}
+@keyframes right {
+    100% {
+        transform: translateX(4rem);
+    }
+}
+.cart-icon{
+    margin-top: 0.5rem;
+    color: blue;
+}
+.rating {
+    color:red;
+    font-family: "Sue Ellen Francisco", cursive !important;
+    font-weight: 1000 !important;
+    font-size: 2rem;
+}
+.food-name{
+    background-color: white;
+    color: var(--h_darker);
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: "Sue Ellen Francisco", cursive !important;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+}
+.tagline{
+    font-size: 2rem;
+    font-weight: 1000;
+    color: green;
+
+    display: flex;
+    align-items: center;
+}
+.food-price{
+    color: black;
+    border-radius: 50%;
+
+    font-family: "Sue Ellen Francisco", cursive !important;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.menu-item-bottom-container{
+    background-color: white;
+    position: absolute;
+    bottom: -4rem;
+    width: 27rem;
+}
+.slider-content-container{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    background-color: black;
+}
+.slider-content{
+    position: absolute;
+    width: 100dvw;
+    top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.slider-subheader{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    opacity: 60%;
+}
+.slider-header{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+}
+.slider-button{
+    margin-top: 4rem;
+    border: 0;
+    padding: 0.5rem 5rem;
+    background-color: transparent;
+    border: 2px dashed var(--h_dark);
+    color: var(--h_dark);
+    transition: 0.1s;
+}
+.slider-button:hover{
+    box-shadow: var(--bs);
+}
+.slider-image{
+    opacity: 40%;
+}
+.content1-stage-container{
+    border: 2px dotted var(--h_dark);
+    padding: 0.5rem 1rem;
+    width: 40rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.content1-description{
+    color: var(--h_dark);
+}
+.content1-icon-container{
+    margin-right: 1rem;
+    background-color: var(--h_dark);
+    padding: 1.5rem;
+    color: var(--h_yellow);
+    border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+}
+.large-one{
+    width: 60%;
+    background-color: var(--h_dark);
+    color: var(--h_yellow);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.small-one{
+    width: 37%;
+    background-color: var(--h_dark);
+    color: var(--h_yellow);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.order-now{
+    border: 0;
+    background-color: transparent;
+    color: var(--h_yellow);
+}
+.menu-dh{
+    font-size: 5rem;
+    font-family: "Sue Ellen Francisco", cursive !important;
+    letter-spacing: 0.4rem;
+    font-weight: 1000;
+}
+.zaxd{
+    opacity: 50%;
+}
+.pasta-image{
+    width: 100%;
+}
+.about-us-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-image{
+    width: 50rem;
+}
+.au-description{
+    opacity: 50%;
+    color: white;
+}
+.thing-text{
+    font-size: 1rem;
+    width: 15rem;
+    opacity: 60%;
+    color: white;
+}
+.details-part{
+    max-width: 39rem;
+    margin-left: -7rem;
+}
+.order-large{
+    width: 70%;
+}
+.order-small{
+    width: 30%;
+    background-color: var(--h_darker);
+}
+.stage-circle{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.stage-line{
+    border-top: 3px dotted white;
+    width: 13rem;
+}
+.adress-card{
+    width: 45%;
+    margin-right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.409);
+}
+.adress-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.409);
+}
+.yellow{
+    color: #ffc107;
+    border: 2px yellow solid;
+}
+.large-1, .large-2 {
+    background-color: var(--h_darker);
+}
+.website-logo{
+    height: 2.5rem;
+    filter: invert(100%);
+    position: relative;
+    bottom: 0.5rem;
+}
+.footer-logo{
+    height: 7rem;
+}
+.move-up{
+    animation: up 0.3s ease forwards;
+}
+@keyframes up {
+    100% {
+        transform: translateY(-4rem);
+    }
+}
