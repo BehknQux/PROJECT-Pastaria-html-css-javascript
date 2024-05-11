@@ -1,3 +1,4 @@
+//menu items
 const menu = [{
         name: 'Chicken Mushroom Cream Fettucine',
         price: getRandomPrice(),
