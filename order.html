@@ -124,7 +124,7 @@
             <div class="list-item border-bottom m-4">
                 <div class="d-flex justify-content-between">
                     <div style="font-size: 1.1rem;" class="fw-bold">Chicken mushroom cream penne</div>
-                    <div class="fw-bold text-warning">$20</div>
+                    <div class="fw-bold text-warning">$30</div>
                 </div>
                 <small>- Coca-Cola 250 ml</small>
                 <ul class="my-3">
@@ -134,7 +134,7 @@
             <div class="list-item border-bottom m-4">
                 <div class="d-flex justify-content-between">
                     <div style="font-size: 1.1rem;" class="fw-bold">Penne with tomato sauce</div>
-                    <div class="fw-bold text-warning">$20</div>
+                    <div class="fw-bold text-warning">$50</div>
                 </div>
                 <small>- Coca-Cola 250 ml</small>
                 <ul class="my-3">
@@ -158,11 +158,113 @@
                 <hr>
                 <div class="d-flex justify-content-between">
                     <div>To Pay</div>
-                    <div class="text-warning">$100</div>
+                    <div class="text-warning">$90</div>
                 </div>
-                <button class="btn btn-success mt-4 w-100">CHECKOUT</button>
+                <button class="btn btn-success mt-4 w-100" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">CHECKOUT</button>
             </div>
-
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-8 text-primary">Give us Feedback!</div>
+                        <div class="d-flex col-4">
+                            <div><i class="fa-solid fa-thumbs-up text-success"></i></div>
+                            <div style="margin: 0 1rem;"><i class="fa-solid fa-hand-lizard text-warning"></i></div>
+                            <div><i class="fa-solid fa-thumbs-down text-danger"></i></div>
+                        </div>
+                    </div>
+                    <form class="my-3" action="">
+                        <div class="row">
+                            <small class="col-8">Do you like your website design?
+                            </small>
+                            <div class="col-4 d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                </div>
+                                <div style="margin: 0 0.4rem;" class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="my-3" action="">
+                        <div class="row align-items-center">
+                            <small class="col-8">Can you easily find the information you are looking for on the website?
+                            </small>
+                            <div class="col-4 d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                </div>
+                                <div style="margin: 0 0.4rem;" class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="my-3" action="">
+                        <div class="row align-items-center">
+                            <small class="col-8">Is the menu and price information on the website sufficient for you?
+                            </small>
+                            <div class="col-4 d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                </div>
+                                <div style="margin: 0 0.4rem;" class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="my-3" action="">
+                        <div class="row align-items-center">
+                            <small class="col-8">Would you consider visiting the website again?
+                            </small>
+                            <div class="col-4 d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                </div>
+                                <div style="margin: 0 0.4rem;" class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary w-100">Save</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -190,6 +292,7 @@
             <div class="social-media-logo"><a href="#"><i class="fa-brands text-warning fa-youtube"></a></i></div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

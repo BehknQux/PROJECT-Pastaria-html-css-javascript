@@ -1,4 +1,3 @@
-//menu items
 const menu = [{
         name: 'Chicken Mushroom Cream Fettucine',
         price: getRandomPrice(),
@@ -94,7 +93,6 @@ function renderMenuItems() {
                 </div>
                 <div class="d-flex justify-content-center"><span class="food-name">${item.name}</span></div>
                 <div class="menu-item-bottom-container d-flex justify-content-evenly" id="menuItemBottom-${index}">
-                    <div class="tagline"><i class="fa-regular fa-circle-check"></i> <span style="margin-left: 4px;"></span></div>
                     <div class="food-price">${item.price.toFixed(2)}$</div>
                     <div class="rating text-warning"><i class="fa-solid fa-star"></i>${item.rating}</div>
                 </div>
